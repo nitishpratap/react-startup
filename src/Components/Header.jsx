@@ -1,9 +1,9 @@
+import Button from './Button.jsx'
 
 export  default function Header(){
     return (
         <>
-            <p>I am header</p>
+           <Button title = "I am header button"></Button>
         </>
     )
-
 }

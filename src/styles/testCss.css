@@ -1,0 +1,22 @@
+p{
+    color:red;
+}
+.first-css{
+    width:200px;
+    height:200px;
+    margin-bottom: 20px;
+    background-color: tomato;
+}
+.second-css{
+    width:200px;
+    height:200px;
+    background-color:blanchedalmond;
+}
+
+
+.red-border{
+    border: 1px solid magenta;
+}
+
+
+
