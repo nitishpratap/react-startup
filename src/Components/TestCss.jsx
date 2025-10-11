@@ -1,34 +1,27 @@
 import '../styles/testCss.css'
+import {useState} from "react";
+
 export default function TestCss() {
+    let [count,setCount] = useState(0)
 
-    let style = {
-        width:'200px',
-        height:"200px",
-        backgroundColor : 'blue',
-        marginBottom : '20px'
-    }
-
-    // let temp = "Red";
-    // if(temp === "green"){
-    //     style.backgroundColor = 'green'
-    // }else{
-    //     style.backgroundColor = 'yellow'
-    // }
 
     return (
-        <>
-            <p style={{
-                color: 'tomato',
-            }}>I am Paragraph</p>
-            <div style={style}>
-
-
-            </div>
-            <div style={{
-                border : '1px solid blue',
-            }} className={'second-css red-border'}>
-
-            </div>
-        </>
+       <div style={{
+           margin: '100px',
+           display: 'flex',
+           flexDirection: 'row',
+           width : '300px',
+           gap: '10px',
+       }}>
+           <button className={"red-border"} onClick={()=>{
+               setCount(count + 1);
+           }}> Increase</button>
+           <h1>{count}</h1>
+           <button className={"red-border"} onClick={function (){
+               if(count >0){
+                   setCount(count - 1);
+               }
+           }}>Decrease</button>
+       </div>
     )
 }
