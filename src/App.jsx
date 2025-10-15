@@ -1,12 +1,16 @@
-import React from 'react';
 import './App.css'
-import Header from './Components/Header.jsx'
-import Button from './Components/Button.jsx'
-import TestCss from "./Components/TestCss.jsx";
+
+import {Child} from "./Components/Child.jsx";
 export default function App() {
     return (
-        <div>
-          <TestCss/>
+        <div style={{
+            width: "100%",
+            height: "100vh",
+            display: "flex",
+           alignItems: "center",
+            justifyContent: "center"
+        }}>
+            <Child/>
         </div>
     );
 }

@@ -1,10 +1,7 @@
 import '../styles/testCss.css'
 import {useState} from "react";
-
 export default function TestCss() {
     let [count,setCount] = useState(0)
-
-
     return (
        <div style={{
            margin: '100px',
